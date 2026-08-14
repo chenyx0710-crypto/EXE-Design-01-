@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EXE 交互设计规范指南">
+  <title>EXE Design - 交互设计规范指南</title>
+  <link rel="stylesheet" href="styles.css?v=20260729m">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <button class="menu-button" id="menuButton" aria-label="打开目录"><span></span><span></span><span></span></button>
+      <a class="logo" href="#intro" aria-label="EXE设计指南首页">
+        <img class="logo-image" src="assets/exe-logo-horizontal.png" alt="EXE">
+        <span class="logo-name"><b>设计指南</b></span>
+      </a>
+    </div>
+    <div class="top-actions">
+      <nav class="platform-tabs" aria-label="终端类型">
+        <button class="platform-tab active" data-platform="管理后台">管理后台</button>
+        <button class="platform-tab" data-platform="APP端">APP端</button>
+        <button class="platform-tab" data-platform="PC端">PC端</button>
+      </nav>
+      <span class="divider"></span>
+      <button class="theme-toggle" id="themeToggle" aria-label="切换深色模式" title="切换日间 / 夜间模式">
+        <span class="sun-icon"></span><span class="theme-knob"></span><span class="moon-icon"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <nav id="sideNav">
+        <section class="nav-group">
+          <h2><span class="group-index">01</span>EXE DESIGN</h2>
+          <a href="#intro" class="nav-link active" data-page="intro">介绍</a>
+        </section>
+        <section class="nav-group">
+          <h2><span class="group-index">02</span>全局样式</h2>
+          <a href="#color" class="nav-link" data-page="color">色彩 <span>Color</span></a>
+          <a href="#layout" class="nav-link" data-page="layout">布局 <span>Layout</span></a>
+          <a href="#font" class="nav-link" data-page="font">文字 <span>Font</span></a>
+          <a href="#icon" class="nav-link" data-page="icon">图标 <span>Icon</span></a>
+          <a href="#shadow" class="nav-link" data-page="shadow">阴影 <span>Shadow</span></a>
+          <a href="#shade" class="nav-link" data-page="shade">遮罩 <span>Shade</span></a>
+          <a href="#dark" class="nav-link" data-page="dark">深色模式 <span>Dark Mode</span></a>
+        </section>
+        <section class="nav-group">
+          <h2><span class="group-index">03</span>模板文档</h2>
+          <a href="#login" class="nav-link" data-page="login">登录页</a>
+          <a href="#home" class="nav-link" data-page="home">首页</a>
+          <a href="#list" class="nav-link" data-page="list">列表页</a>
+          <a href="#form" class="nav-link" data-page="form">表单页</a>
+          <a href="#detail" class="nav-link" data-page="detail">详情页</a>
+          <a href="#steps" class="nav-link" data-page="steps">步骤页</a>
+          <a href="#exception" class="nav-link" data-page="exception">异常页</a>
+        </section>
+      </nav>
+      <div class="sidebar-foot"><span>EXE Design System</span><span>v1.0</span></div>
+    </aside>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="content" id="content">
+      <div class="content-wrap">
+        <div class="breadcrumb"><span>设计规范</span><i>/</i><strong id="breadcrumbName">介绍</strong></div>
+        <article id="article"></article>
+        <footer class="page-footer"><span>EXE Design System</span><span>让复杂的交互，拥有清晰的秩序。</span></footer>
+      </div>
+      <aside class="toc" id="toc"></aside>
+    </main>
+  </div>
+  <script src="app.js?v=20260729l"></script>
+</body>
+</html>
